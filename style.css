@@ -1,1 +1,37 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+}
 
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.overlay.center {
+  left: 30%;
+  width: 40%;
+}
+
+.overlay.right {
+  right: 0;
+  width: 30%;
+}
