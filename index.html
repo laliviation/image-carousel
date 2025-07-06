@@ -6,13 +6,17 @@
   <title>Image Carousel</title>
   <style>
     #carouselImage {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* Default for desktop */
+      width: 360px; /* desktop size ~ smartphone */
+      max-width: 90vw; /* never bigger than 90% viewport */
+      aspect-ratio: 345 / 448;
+      margin-left: 0; /* left align on desktop */
+      position: relative;/* Default for desktop */
     }
 
     @media (max-width: 768px) {
       #carouselImage {
+        argin-left: auto;
+        margin-right: auto;
         object-fit: cover; /* On mobile */
       }
     }
