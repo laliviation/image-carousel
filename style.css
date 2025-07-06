@@ -10,6 +10,7 @@ body, html {
   max-width: 90vw; /* never bigger than 90% viewport */
   aspect-ratio: 345 / 448;
   margin-left: 0; /* left align on desktop */
+  justify-content: flex-start; 
 }
 
 @media (max-width: 768px) {
@@ -17,6 +18,7 @@ body, html {
     margin-left: auto;
     margin-right: auto; /* center on mobile */
     width: 90vw;
+    justify-content: center;
   }
 }
 
