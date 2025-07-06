@@ -26,24 +26,34 @@ const links = [
 
 let current = 0;
 
-const carouselImage = document.getElementById("carouselImage");
-carouselImage.src = images[current];
+  const carouselImage = document.getElementById("carouselImage");
+  carouselImage.src = images[current];
 
-carouselImage.addEventListener("click", function(event) {
-  const width = carouselImage.clientWidth;
-  const clickX = event.offsetX;
-
-  if (clickX < width * 0.3) {
-    // Left 30%: Previous image
-    current = (current - 1 + images.length) % images.length;
-    carouselImage.src = images[current];
-  } else if (clickX > width * 0.7) {
-    // Right 30%: Next image
+  function nextSlide() {
     current = (current + 1) % images.length;
     carouselImage.src = images[current];
-  } else {
-    // Middle 40%: Open link in new tab
+  }
+
+  function previousSlide() {
+    current = (current - 1 + images.length) % images.length;
+    carouselImage.src = images[current];
+  }
+
+  function visitLink() {
     window.open(links[current], "_blank");
   }
-});
+
+  carouselImage.addEventListener("click", function(event) {
+    const rect = carouselImage.getBoundingClientRect();
+    const clickX = event.clientX - rect.left;
+    const width = rect.width;
+
+    if (clickX < width * 0.3) {
+      previousSlide();
+    } else if (clickX > width * 0.7) {
+      nextSlide();
+    } else {
+      visitLink();
+    }
+  });
 
