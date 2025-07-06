@@ -1,41 +1,59 @@
-body {
+body, html {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   padding: 0;
   background: transparent;
-  border: none;
-  box-shadow: none;
-}
 }
 
 .carousel {
   position: relative;
-  width: 90%;
-  max-width: 600px;
+  width: 360px; /* desktop size ~ smartphone */
+  max-width: 90vw; /* never bigger than 90% viewport */
+  aspect-ratio: 345 / 448;
+  margin-left: 0; /* left align on desktop */
 }
 
-.carousel img {
+@media (max-width: 768px) {
+  .carousel {
+    margin-left: auto;
+    margin-right: auto; /* center on mobile */
+    width: 90vw;
+  }
+}
+
+#carouselImage {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
   display: block;
-  border-radius: 0px;
 }
 
+/* overlays for clickable areas */
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   cursor: pointer;
+  user-select: none;
 }
 
 .overlay.center {
-  left: 30%;
-  width: 40%;
+  left: 33.33%;
+  right: 33.33%;
+  /* middle third */
+  z-index: 10;
 }
 
 .overlay.right {
   right: 0;
-  width: 30%;
+  width: 33.33%;
+  /* right third */
+  z-index: 10;
+}
+
+.overlay.left {
+  left: 0;
+  width: 33.33%;
+  /* left third */
+  z-index: 10;
 }
