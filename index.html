@@ -4,6 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image Carousel</title>
+  <style>
+    #carouselImage {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Default for desktop */
+    }
+
+    @media (max-width: 768px) {
+      #carouselImage {
+        object-fit: cover; /* On mobile */
+      }
+    }
+  </style>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
