@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Image Carousel</title>
-  <style>
-    #carouselImage {
-      width: 360px; /* desktop size ~ smartphone */
-      max-width: 90vw; /* never bigger than 90% viewport */
-      aspect-ratio: 345 / 448;
-      margin-left: 0; /* left align on desktop */
-      position: relative;/* Default for desktop */
-    }
-
-    @media (max-width: 768px) {
-      #carouselImage {
-        margin-left: auto;
-        margin-right: auto;
-        object-fit: cover; /* On mobile */
-      }
-    }
-  </style>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="carousel" id="carousel">
     <img id="carouselImage" src="slide1.png" alt="Slide" />
+    <div class="overlay left" onclick="prevSlide()"></div>
     <div class="overlay center" onclick="visitLink()"></div>
     <div class="overlay right" onclick="nextSlide()"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
