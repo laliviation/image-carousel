@@ -18,7 +18,7 @@ const links = [
   "https://www.musikwerkstattwels.at", 
   "https://www.lepirate-rosenheim.de",
   "https://www.royalgarden.at/programm/", 
-  "https://www.tribuene-linz.at", 
+  "https://tribuene.at", 
   "https://www.cafe-traxlmayr.at/konzerte/",
   "https://zehnerhaus-badradkersburg.at/veranstaltungskalender/"
 
