@@ -28,6 +28,7 @@ body, html {
   object-fit: contain;
   user-select: none;
   display: block;
+  margin: 0;
 }
 
 /* overlays for clickable areas */
