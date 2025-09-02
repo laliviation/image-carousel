@@ -6,7 +6,7 @@ const images = [
   "slide5.png",
   "slide6.png", 
   "slide7.png",
-  "slide8.png", 
+  "slide8n.png", 
   "slide9.png", 
   "slide10.png"
 ];  // your images
