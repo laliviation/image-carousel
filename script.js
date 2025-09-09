@@ -35,7 +35,7 @@ const links = [
   "https://z87.de",
   "https://jazzclublindau.de",
   "https://jazzhram.si",
-  "hhttps://www.kereszturyvmk.hu/vhk/koncertek/",
+  "https://www.kereszturyvmk.hu/vhk/jazz-szerda",
   "https://www.tubes-music.at/de/",
   "https://zehnerhaus-badradkersburg.at/veranstaltungskalender/",
   "http://www.hobiraum.at/events1/"
