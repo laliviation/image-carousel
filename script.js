@@ -26,7 +26,7 @@ const links = [
   "https://www.jazzland.at",
   "https://www.musikwerkstattwels.at", 
   "https://www.lepirate-rosenheim.de",
-  "https://www.royalgarden.at/programm/", 
+  "https://www.zwe.cc", 
   "https://tribuene.at/?page_id=10", 
   "https://www.cafe-traxlmayr.at/konzerte/",
   "https://www.jazz-im-saegewerk.org/veranstaltungen",
