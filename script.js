@@ -8,7 +8,16 @@ const images = [
   "slide7.png",
   "slide8n.png", 
   "slide9.png", 
-  "slide10.png"
+  "slide10.png",
+  "slide11.png",
+  "slide12.png",
+  "slide13.png",
+  "slide14.png",
+  "slide15.png",
+  "slide16.png",
+  "slide17.png",
+  "slide18.png",
+  "slide19.png"
 ];  // your images
 const links = [
   "https://boresjazz.hu/programok/?render=full", 
@@ -20,7 +29,16 @@ const links = [
   "https://www.royalgarden.at/programm/", 
   "https://tribuene.at/?page_id=10", 
   "https://www.cafe-traxlmayr.at/konzerte/",
-  "https://zehnerhaus-badradkersburg.at/veranstaltungskalender/"
+  "https://www.jazz-im-saegewerk.org/veranstaltungen",
+  "https://www.jazzclub-abensberg.de/index.php/termine",
+  "https://pasinger-fabrik.de/programm/",
+  "https://z87.de",
+  "https://jazzclublindau.de",
+  "https://jazzhram.si",
+  "hhttps://www.kereszturyvmk.hu/vhk/koncertek/",
+  "https://www.tubes-music.at/de/",
+  "https://zehnerhaus-badradkersburg.at/veranstaltungskalender/",
+  "http://www.hobiraum.at/events1/"
 
 ];
 
